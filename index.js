@@ -69,7 +69,7 @@ function multiply(a, b){
     return a * b;
   }
 
-multiply(2, 3);
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -85,7 +85,7 @@ function dogYears(age){
     return age * 7;
 }
 
-dogYears(3);
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -167,6 +167,13 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+let computer = Math.floor(Math.random() * 3) + 1
+switch(computer) {
+  case 1: computer = 'rock'; break;
+  case 2: computer = 'paper'; break;
+  case 3: computer = 'scissors'; break;
+}
+
 function game(user, computer){
   if (user === computer) {
       return "it's a tie";
@@ -229,8 +236,6 @@ Using the annoyingSong function below do the following:
 function annoyingSong(number){
   return `${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number - 1} bottles of soda on the wall`;
 }
-
-annoyingSong(12);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
