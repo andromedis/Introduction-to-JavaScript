@@ -286,8 +286,17 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(str) {
+  const vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u'];
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    for (let j = 0; j < vowels.length; j++) {
+      if (str.charAt(i) === vowels[j]) {
+        count++;
+      }
+    }
+  }
+  return count;
 }
 
 
